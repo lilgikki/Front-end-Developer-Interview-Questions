@@ -1,188 +1,367 @@
-# Front-end Developer Interview Questions
+---
+title: Вопросы кандидату на должность front-end разработчика
+layout: layouts/page.njk
+permalink: /translations/russian/index.html
+---
 
-This repository contains a number of front-end interview questions that can be used when vetting potential candidates. It is by no means recommended to use every single question here on the same candidate (that would take hours). Choosing a few items from this list should help you vet the intended skills you require.
+# Вопросы кандидату на должность фронтенд-разработчика
 
-**Note:** Keep in mind that many of these questions are open-ended and could lead to interesting discussions that tell you more about the person's capabilities than a straight answer would.
+**Замечание:** Этот репозиторий содержит подборку вопросов, которые могут быть использованы на собеседованиях на должность фронтенд-разработчика. Здесь предлагаются лишь идеи, не нужно задавать все вопросы сразу (иначе в один час точно не уложитесь).
 
-You can read more about this project & its history [here](https://h5bp.org/Front-end-Developer-Interview-Questions/about/).
+Также имейте в виду, что многие вопросы не требуют однозначного короткого ответа, а лишь помогают завести беседу на ту или иную тему (предоставляя кандидату возможность показать себя во всей красе).
 
-## Table of Contents
+## <a name='toc'>Содержание</a>
 
-  1. [General Questions](src/questions/general-questions.md)
-  2. [HTML Questions](src/questions/html-questions.md)
-  3. [CSS Questions](src/questions/css-questions.md)
-  4. [JS Questions](src/questions/javascript-questions.md)
-  5. [Accessibility Questions](https://scottaohara.github.io/accessibility_interview_questions/) (external link)
-  6. [Testing Questions](src/questions/testing-questions.md)
-  7. [Performance Questions](src/questions/performance-questions.md)
-  8. [Network Questions](src/questions/network-questions.md)
-  9. [Coding Questions](src/questions/coding-questions.md)
-  10. [Fun Questions](src/questions/fun-questions.md)
+  1. [Авторы](#contributors)
+  1. [Общие вопросы](#general)
+  1. [Вопросы по HTML](#html)
+  1. [Вопросы по CSS](#css)
+  1. [Вопросы по JavaScript](#js)
+  1. [Вопросы по тестированию](#testing)
+  1. [Вопросы по производительности](#performance)
+  1. [Вопросы по сетям](#network)
+  1. [Примеры кода на JavaScript](#jscode)
+  1. ["Светская беседа"](#fun)
 
-## Getting Involved
+#### [[⬆]](#toc) <a name='contributors'>Авторы</a>
 
-  1. [Contributors](#contributors)
-  2. [How to Contribute](https://github.com/h5bp/Front-end-Developer-Interview-Questions/blob/master/.github/CONTRIBUTING.md)
-  3. [License](https://github.com/h5bp/Front-end-Developer-Interview-Questions/blob/master/LICENSE.md)
+Этот проект был запущен в 2009 году в сотрудничестве с [@paul_irish](https://twitter.com/paul_irish) [@bentruyman](https://twitter.com/bentruyman) [@cowboy](https://twitter.com/cowboy) [@ajpiano](https://twitter.com/ajpiano) [@SlexAxton](https://twitter.com/slexaxton) [@boazsender](https://twitter.com/boazsender) [@miketaylr](https://twitter.com/miketaylr) [@vladikoff](https://twitter.com/vladikoff) [@gf3](https://twitter.com/gf3) [@jon_neal](https://twitter.com/jon_neal) [@sambreed](https://twitter.com/sambreed) и [@iansym](https://twitter.com/iansym).
 
+В настоящее время этот проект поддерживают:
 
-The project is currently maintained by:
+* [roblarsen](https://github.com/roblarsen)
+* [vvscode](https://github.com/vvscode)
 
-- [@roblarsen](https://github.com/roblarsen)
+С тех пор он был активным благодаря этим [замечательным людям](https://github.com/h5bp/Front-end-Developer-Interview-Questions/blob/master/CONTRIBUTORS.md).
 
-## Contributors
+#### [[⬆]](#toc) <a name='general'>Общие вопросы:</a>
 
-Feeling inspired? Check our [Contributing guide](https://github.com/h5bp/Front-end-Developer-Interview-Questions/blob/master/.github/CONTRIBUTING.md) to get started!
+* Что вы изучили вчера/на этой неделе?
+* Что вас привлекает в программировании?
+* С какой технической сложностью вы недавно столкнулись и как с ней справились?
+* Какие методы для повышения производительности вы использовали при создании или обслуживании сайта?
+* Можете ли вы описать некоторые методы SEO, которые вы использовали в последнее время?
+* Можете ли вы объяснить общие принципы относительно фронтенд-безопасности или недавние проблемы, которые вы решили?
+* Какие действия вы лично предприняли в недавних проектах для повышения удобства использования вашего кода?
+* Расскажите о предпочитаемой среде разработки.
+* С какими системами контроля версий вы знакомы?
+* Можете ли вы описать порядок действий при создании новой веб-страницы?
+* Если у вас есть 5 разных файлов со стилями, какой лучший способ интегрировать их в сайт?
+* Можете ли вы описать разницу между прогрессивным улучшением и изящной деградацией?
+* Как можно оптимизировать загрузку внешних ресурсов на странице?
+* Сколько ресурсов браузер может одновременно загружать с одного домена?
+  * Какие есть исключения?
+* Назовите три способа уменьшения времени загрузки страницы (воспринимаемого или реального).
+* Если вы присоединились к проекту, где для форматирования используются табы, а вы привыкли использовать пробелы, как вы поступите?
+* Опишите, как бы вы реализовали примитивное слайд-шоу.
+* Если бы у вас была возможность освоить новую технологию в этом году, что бы это было?
+* Объясните важность стандартов и комитетов по стандартам.
+* Что такое FOUC (Flash Of Unstyled Content)? Как его избежать?
+* Объясните, что такое ARIA и скринридеры, а также как сделать сайт доступным.
+* Какие преимущества и недостатки у CSS и JavaScript анимаций?
+* Что означает CORS и какую проблему решает?
 
-<!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
-<!-- prettier-ignore-start -->
-<!-- markdownlint-disable -->
-<table>
-  <tr>
-    <td align="center"><a href="http://darcyclarke.me/"><img src="https://avatars2.githubusercontent.com/u/459713?v=4" width="120px;" alt="Darcy Clarke"/><br /><sub><b>Darcy Clarke</b></sub></a><br /><a href="#ideas-darcyclarke" title="Ideas, Planning, & Feedback">🤔</a> <a href="https://github.com/h5bp/Front-end-Developer-Interview-Questions/commits?author=darcyclarke" title="Documentation">📖</a> <a href="#infra-darcyclarke" title="Infrastructure (Hosting, Build-Tools, etc)">🚇</a> <a href="#review-darcyclarke" title="Reviewed Pull Requests">👀</a> <a href="#question-darcyclarke" title="Answering Questions">💬</a> <a href="#talk-darcyclarke" title="Talks">📢</a> <a href="#maintenance-darcyclarke" title="Maintenance">🚧</a></td>
-    <td align="center"><a href="http://about.me/appleboy"><img src="https://avatars0.githubusercontent.com/u/21979?v=4" width="120px;" alt="Bo-Yi Wu"/><br /><sub><b>Bo-Yi Wu</b></sub></a><br /><a href="https://github.com/h5bp/Front-end-Developer-Interview-Questions/commits?author=appleboy" title="Documentation">📖</a> <a href="#review-appleboy" title="Reviewed Pull Requests">👀</a></td>
-    <td align="center"><a href="http://nikolay.it"><img src="https://avatars1.githubusercontent.com/u/3106986?v=4" width="120px;" alt="Nikolay Kostov"/><br /><sub><b>Nikolay Kostov</b></sub></a><br /><a href="#translation-NikolayIT" title="Translation">🌍</a></td>
-    <td align="center"><a href="http://hancic.info"><img src="https://avatars3.githubusercontent.com/u/356488?v=4" width="120px;" alt="Jan Hancic"/><br /><sub><b>Jan Hancic</b></sub></a><br /><a href="#translation-janhancic" title="Translation">🌍</a></td>
-    <td align="center"><a href="http://twitter.com/richgilbank"><img src="https://avatars2.githubusercontent.com/u/1245284?v=4" width="120px;" alt="Rich Gilbank"/><br /><sub><b>Rich Gilbank</b></sub></a><br /><a href="https://github.com/h5bp/Front-end-Developer-Interview-Questions/commits?author=richgilbank" title="Documentation">📖</a> <a href="#review-richgilbank" title="Reviewed Pull Requests">👀</a></td>
-    <td align="center"><a href="https://github.com/mattiasw"><img src="https://avatars0.githubusercontent.com/u/564615?v=4" width="120px;" alt="Mattias Wallander"/><br /><sub><b>Mattias Wallander</b></sub></a><br /><a href="#translation-mattiasw" title="Translation">🌍</a></td>
-  </tr>
-  <tr>
-    <td align="center"><a href="http://gplus.to/songhun"><img src="https://avatars0.githubusercontent.com/u/760451?v=4" width="120px;" alt="Songhun"/><br /><sub><b>Songhun</b></sub></a><br /><a href="https://github.com/h5bp/Front-end-Developer-Interview-Questions/commits?author=Songhun" title="Documentation">📖</a> <a href="#translation-Songhun" title="Translation">🌍</a></td>
-    <td align="center"><a href="http://giugee.com/portfolio"><img src="https://avatars3.githubusercontent.com/u/458523?v=4" width="120px;" alt="Giulia Alfonsi"/><br /><sub><b>Giulia Alfonsi</b></sub></a><br /><a href="#translation-electricg" title="Translation">🌍</a></td>
-    <td align="center"><a href="http://mmhan.net"><img src="https://avatars0.githubusercontent.com/u/301672?v=4" width="120px;" alt="Mike Myat Min Han"/><br /><sub><b>Mike Myat Min Han</b></sub></a><br /><a href="#translation-mmhan" title="Translation">🌍</a></td>
-    <td align="center"><a href="http://www.zhihu.com/people/deng-chen-hua"><img src="https://avatars0.githubusercontent.com/u/1861976?v=4" width="120px;" alt="SunLn"/><br /><sub><b>SunLn</b></sub></a><br /><a href="#translation-SunLn" title="Translation">🌍</a></td>
-    <td align="center"><a href="http://javarouka.github.com"><img src="https://avatars2.githubusercontent.com/u/1438503?v=4" width="120px;" alt="Yi, Hangehee"/><br /><sub><b>Yi, Hangehee</b></sub></a><br /><a href="#translation-javarouka" title="Translation">🌍</a></td>
-    <td align="center"><a href="https://github.com/shawnqiang"><img src="https://avatars1.githubusercontent.com/u/284017?v=4" width="120px;" alt="shawnqiang"/><br /><sub><b>shawnqiang</b></sub></a><br /><a href="#translation-shawnqiang" title="Translation">🌍</a></td>
-  </tr>
-  <tr>
-    <td align="center"><a href="http://guilhermepontes.com"><img src="https://avatars2.githubusercontent.com/u/2065325?v=4" width="120px;" alt="Guilherme Pontes"/><br /><sub><b>Guilherme Pontes</b></sub></a><br /><a href="#translation-guilhermepontes" title="Translation">🌍</a></td>
-    <td align="center"><a href="https://github.com/lufeihaidao"><img src="https://avatars3.githubusercontent.com/u/1731864?v=4" width="120px;" alt="lufeihaidao"/><br /><sub><b>lufeihaidao</b></sub></a><br /><a href="#translation-lufeihaidao" title="Translation">🌍</a></td>
-    <td align="center"><a href="http://about.me/DonaldZhan"><img src="https://avatars2.githubusercontent.com/u/3182876?v=4" width="120px;" alt="Donald Zhan"/><br /><sub><b>Donald Zhan</b></sub></a><br /><a href="#translation-dz1984" title="Translation">🌍</a></td>
-    <td align="center"><a href="http://mina.codes"><img src="https://avatars1.githubusercontent.com/u/876210?v=4" width="120px;" alt="Mina Markham"/><br /><sub><b>Mina Markham</b></sub></a><br /><a href="https://github.com/h5bp/Front-end-Developer-Interview-Questions/commits?author=minamarkham" title="Documentation">📖</a></td>
-    <td align="center"><a href="http://paulirish.com"><img src="https://avatars0.githubusercontent.com/u/39191?v=4" width="120px;" alt="Paul Irish"/><br /><sub><b>Paul Irish</b></sub></a><br /><a href="https://github.com/h5bp/Front-end-Developer-Interview-Questions/commits?author=paulirish" title="Documentation">📖</a></td>
-    <td align="center"><a href="https://mathieuhays.co.uk"><img src="https://avatars2.githubusercontent.com/u/5703113?v=4" width="120px;" alt="Mathieu Hays"/><br /><sub><b>Mathieu Hays</b></sub></a><br /><a href="#translation-mathieuhays" title="Translation">🌍</a></td>
-  </tr>
-  <tr>
-    <td align="center"><a href="https://yanni4night.github.io"><img src="https://avatars0.githubusercontent.com/u/1710436?v=4" width="120px;" alt="Yong Yin"/><br /><sub><b>Yong Yin</b></sub></a><br /><a href="https://github.com/h5bp/Front-end-Developer-Interview-Questions/commits?author=yanni4night" title="Documentation">📖</a></td>
-    <td align="center"><a href="http://dalesande.com"><img src="https://avatars3.githubusercontent.com/u/181089?v=4" width="120px;" alt="Dale Sande / @anotheruiguy"/><br /><sub><b>Dale Sande / @anotheruiguy</b></sub></a><br /><a href="https://github.com/h5bp/Front-end-Developer-Interview-Questions/commits?author=blackfalcon" title="Documentation">📖</a> <a href="#infra-blackfalcon" title="Infrastructure (Hosting, Build-Tools, etc)">🚇</a> <a href="#review-blackfalcon" title="Reviewed Pull Requests">👀</a></td>
-    <td align="center"><a href="https://www.marcobiedermann.com"><img src="https://avatars0.githubusercontent.com/u/5244986?v=4" width="120px;" alt="Marco Biedermann"/><br /><sub><b>Marco Biedermann</b></sub></a><br /><a href="#infra-marcobiedermann" title="Infrastructure (Hosting, Build-Tools, etc)">🚇</a></td>
-    <td align="center"><a href="http://victorcoulon.com"><img src="https://avatars2.githubusercontent.com/u/594365?v=4" width="120px;" alt="Victor Coulon"/><br /><sub><b>Victor Coulon</b></sub></a><br /><a href="#translation-Victa" title="Translation">🌍</a> <a href="#review-Victa" title="Reviewed Pull Requests">👀</a></td>
-    <td align="center"><a href="https://github.com/demoive"><img src="https://avatars0.githubusercontent.com/u/472288?v=4" width="120px;" alt="Paulo Ávila"/><br /><sub><b>Paulo Ávila</b></sub></a><br /><a href="https://github.com/h5bp/Front-end-Developer-Interview-Questions/commits?author=demoive" title="Documentation">📖</a></td>
-    <td align="center"><a href="https://github.com/ekremkaraca"><img src="https://avatars0.githubusercontent.com/u/690612?v=4" width="120px;" alt="Ekrem Karaca"/><br /><sub><b>Ekrem Karaca</b></sub></a><br /><a href="#translation-ekremkaraca" title="Translation">🌍</a></td>
-  </tr>
-  <tr>
-    <td align="center"><a href="http://achalv.com"><img src="https://avatars3.githubusercontent.com/u/1014428?v=4" width="120px;" alt="Achal Varma"/><br /><sub><b>Achal Varma</b></sub></a><br /><a href="https://github.com/h5bp/Front-end-Developer-Interview-Questions/commits?author=achalv" title="Documentation">📖</a></td>
-    <td align="center"><a href="https://www.audero.it"><img src="https://avatars2.githubusercontent.com/u/1430979?v=4" width="120px;" alt="Aurelio De Rosa"/><br /><sub><b>Aurelio De Rosa</b></sub></a><br /><a href="https://github.com/h5bp/Front-end-Developer-Interview-Questions/commits?author=AurelioDeRosa" title="Documentation">📖</a></td>
-    <td align="center"><a href="https://github.com/d-i-b"><img src="https://avatars2.githubusercontent.com/u/553940?v=4" width="120px;" alt="Min Zhao"/><br /><sub><b>Min Zhao</b></sub></a><br /><a href="#translation-d-i-b" title="Translation">🌍</a></td>
-    <td align="center"><a href="https://twitter.com/alrra"><img src="https://avatars1.githubusercontent.com/u/1223565?v=4" width="120px;" alt="Cătălin Mariș"/><br /><sub><b>Cătălin Mariș</b></sub></a><br /><a href="https://github.com/h5bp/Front-end-Developer-Interview-Questions/commits?author=alrra" title="Documentation">📖</a> <a href="#translation-alrra" title="Translation">🌍</a></td>
-    <td align="center"><a href="https://s10wen.com"><img src="https://avatars2.githubusercontent.com/u/1136114?v=4" width="120px;" alt="Simon Owen"/><br /><sub><b>Simon Owen</b></sub></a><br /><a href="https://github.com/h5bp/Front-end-Developer-Interview-Questions/commits?author=s10wen" title="Documentation">📖</a></td>
-    <td align="center"><a href="https://github.com/MaximKhlobystov"><img src="https://avatars0.githubusercontent.com/u/5004762?v=4" width="120px;" alt="Maxim Khlobystov"/><br /><sub><b>Maxim Khlobystov</b></sub></a><br /><a href="https://github.com/h5bp/Front-end-Developer-Interview-Questions/commits?author=MaximKhlobystov" title="Documentation">📖</a> <a href="#review-MaximKhlobystov" title="Reviewed Pull Requests">👀</a></td>
-  </tr>
-  <tr>
-    <td align="center"><a href="https://github.com/dermatobia"><img src="https://avatars2.githubusercontent.com/u/4896612?v=4" width="120px;" alt="Sara"/><br /><sub><b>Sara</b></sub></a><br /><a href="https://github.com/h5bp/Front-end-Developer-Interview-Questions/commits?author=dermatobia" title="Documentation">📖</a> <a href="#translation-dermatobia" title="Translation">🌍</a></td>
-    <td align="center"><a href="https://github.com/jhummel"><img src="https://avatars0.githubusercontent.com/u/495484?v=4" width="120px;" alt="Jason Hummel"/><br /><sub><b>Jason Hummel</b></sub></a><br /><a href="https://github.com/h5bp/Front-end-Developer-Interview-Questions/commits?author=jhummel" title="Documentation">📖</a></td>
-    <td align="center"><a href="https://github.com/kunsachdeva"><img src="https://avatars2.githubusercontent.com/u/5383258?v=4" width="120px;" alt="Kunal Sachdeva"/><br /><sub><b>Kunal Sachdeva</b></sub></a><br /><a href="https://github.com/h5bp/Front-end-Developer-Interview-Questions/commits?author=kunsachdeva" title="Documentation">📖</a></td>
-    <td align="center"><a href="https://strugee.net"><img src="https://avatars0.githubusercontent.com/u/911174?v=4" width="120px;" alt="AJ Jordan"/><br /><sub><b>AJ Jordan</b></sub></a><br /><a href="https://github.com/h5bp/Front-end-Developer-Interview-Questions/commits?author=strugee" title="Documentation">📖</a></td>
-    <td align="center"><a href="https://github.com/paulalexandru"><img src="https://avatars2.githubusercontent.com/u/10955105?v=4" width="120px;" alt="paulalexandru"/><br /><sub><b>paulalexandru</b></sub></a><br /><a href="https://github.com/h5bp/Front-end-Developer-Interview-Questions/commits?author=paulalexandru" title="Documentation">📖</a> <a href="#translation-paulalexandru" title="Translation">🌍</a></td>
-    <td align="center"><a href="https://github.com/rozehan"><img src="https://avatars0.githubusercontent.com/u/2157467?v=4" width="120px;" alt="dot"/><br /><sub><b>dot</b></sub></a><br /><a href="#infra-rozehan" title="Infrastructure (Hosting, Build-Tools, etc)">🚇</a> <a href="#translation-rozehan" title="Translation">🌍</a></td>
-  </tr>
-  <tr>
-    <td align="center"><a href="http://twitter.com/billowblut"><img src="https://avatars3.githubusercontent.com/u/1256959?v=4" width="120px;" alt="Everardo Medina"/><br /><sub><b>Everardo Medina</b></sub></a><br /><a href="#translation-everblut" title="Translation">🌍</a></td>
-    <td align="center"><a href="https://github.com/gauravmuk"><img src="https://avatars0.githubusercontent.com/u/250947?v=4" width="120px;" alt="Gaurav Nanda"/><br /><sub><b>Gaurav Nanda</b></sub></a><br /><a href="https://github.com/h5bp/Front-end-Developer-Interview-Questions/commits?author=gauravmuk" title="Documentation">📖</a></td>
-    <td align="center"><a href="https://github.com/malaman"><img src="https://avatars0.githubusercontent.com/u/6554653?v=4" width="120px;" alt="Andrii Malaman"/><br /><sub><b>Andrii Malaman</b></sub></a><br /><a href="https://github.com/h5bp/Front-end-Developer-Interview-Questions/commits?author=malaman" title="Documentation">📖</a></td>
-    <td align="center"><a href="http://www.betterpixels.co.uk"><img src="https://avatars3.githubusercontent.com/u/419147?v=4" width="120px;" alt="Daniele Zanni"/><br /><sub><b>Daniele Zanni</b></sub></a><br /><a href="#translation-syymza" title="Translation">🌍</a></td>
-    <td align="center"><a href="https://fernandofreitasalves.com"><img src="https://avatars3.githubusercontent.com/u/1414472?v=4" width="120px;" alt="Fernando Freitas Alves"/><br /><sub><b>Fernando Freitas Alves</b></sub></a><br /><a href="#translation-ffreitasalves" title="Translation">🌍</a></td>
-    <td align="center"><a href="https://github.com/tjwudi"><img src="https://avatars0.githubusercontent.com/u/5257816?v=4" width="120px;" alt="John Wu"/><br /><sub><b>John Wu</b></sub></a><br /><a href="https://github.com/h5bp/Front-end-Developer-Interview-Questions/commits?author=tjwudi" title="Documentation">📖</a></td>
-  </tr>
-  <tr>
-    <td align="center"><a href="https://github.com/pnevares"><img src="https://avatars0.githubusercontent.com/u/211764?v=4" width="120px;" alt="Pablo Nevares"/><br /><sub><b>Pablo Nevares</b></sub></a><br /><a href="https://github.com/h5bp/Front-end-Developer-Interview-Questions/commits?author=pnevares" title="Documentation">📖</a> <a href="#translation-pnevares" title="Translation">🌍</a></td>
-    <td align="center"><a href="https://github.com/f3liperamos"><img src="https://avatars3.githubusercontent.com/u/4040037?v=4" width="120px;" alt="Felipe Ramos"/><br /><sub><b>Felipe Ramos</b></sub></a><br /><a href="https://github.com/h5bp/Front-end-Developer-Interview-Questions/commits?author=f3liperamos" title="Documentation">📖</a></td>
-    <td align="center"><a href="http://twitter.com/arthur_versch"><img src="https://avatars0.githubusercontent.com/u/6025224?v=4" width="120px;" alt="Arthur Verschaeve"/><br /><sub><b>Arthur Verschaeve</b></sub></a><br /><a href="https://github.com/h5bp/Front-end-Developer-Interview-Questions/commits?author=arthurvr" title="Documentation">📖</a> <a href="#review-arthurvr" title="Reviewed Pull Requests">👀</a> <a href="#translation-arthurvr" title="Translation">🌍</a></td>
-    <td align="center"><a href="https://github.com/isdampe"><img src="https://avatars1.githubusercontent.com/u/7271686?v=4" width="120px;" alt="Richard Denton"/><br /><sub><b>Richard Denton</b></sub></a><br /><a href="https://github.com/h5bp/Front-end-Developer-Interview-Questions/commits?author=isdampe" title="Documentation">📖</a></td>
-    <td align="center"><a href="https://github.com/kubum"><img src="https://avatars3.githubusercontent.com/u/169803?v=4" width="120px;" alt="Andrey Fadeyev"/><br /><sub><b>Andrey Fadeyev</b></sub></a><br /><a href="#translation-kubum" title="Translation">🌍</a></td>
-    <td align="center"><a href="https://github.com/rimager"><img src="https://avatars0.githubusercontent.com/u/7401367?v=4" width="120px;" alt="rimager"/><br /><sub><b>rimager</b></sub></a><br /><a href="https://github.com/h5bp/Front-end-Developer-Interview-Questions/commits?author=rimager" title="Documentation">📖</a></td>
-  </tr>
-  <tr>
-    <td align="center"><a href="https://github.com/rjain11"><img src="https://avatars3.githubusercontent.com/u/5899771?v=4" width="120px;" alt="Rishabh Jain"/><br /><sub><b>Rishabh Jain</b></sub></a><br /><a href="https://github.com/h5bp/Front-end-Developer-Interview-Questions/commits?author=rjain11" title="Documentation">📖</a></td>
-    <td align="center"><a href="https://github.com/Kaijun"><img src="https://avatars3.githubusercontent.com/u/1693027?v=4" width="120px;" alt="Kaijun Chen"/><br /><sub><b>Kaijun Chen</b></sub></a><br /><a href="#translation-Kaijun" title="Translation">🌍</a></td>
-    <td align="center"><a href="https://github.com/NkS90"><img src="https://avatars2.githubusercontent.com/u/2872399?v=4" width="120px;" alt="Nithya"/><br /><sub><b>Nithya</b></sub></a><br /><a href="https://github.com/h5bp/Front-end-Developer-Interview-Questions/commits?author=NkS90" title="Documentation">📖</a></td>
-    <td align="center"><a href="http://www.erwanjegouzo.com"><img src="https://avatars3.githubusercontent.com/u/366909?v=4" width="120px;" alt="Erwan Jegouzo"/><br /><sub><b>Erwan Jegouzo</b></sub></a><br /><a href="https://github.com/h5bp/Front-end-Developer-Interview-Questions/commits?author=erwanjegouzo" title="Documentation">📖</a></td>
-    <td align="center"><a href="https://www.linkedin.com/in/tiemevanveen"><img src="https://avatars3.githubusercontent.com/u/1330668?v=4" width="120px;" alt="Tieme van Veen"/><br /><sub><b>Tieme van Veen</b></sub></a><br /><a href="https://github.com/h5bp/Front-end-Developer-Interview-Questions/commits?author=teameh" title="Documentation">📖</a></td>
-    <td align="center"><a href="https://github.com/linkgod"><img src="https://avatars3.githubusercontent.com/u/1736020?v=4" width="120px;" alt="Hsun"/><br /><sub><b>Hsun</b></sub></a><br /><a href="#translation-linkgod" title="Translation">🌍</a></td>
-  </tr>
-  <tr>
-    <td align="center"><a href="https://github.com/adrienchretien"><img src="https://avatars2.githubusercontent.com/u/1096295?v=4" width="120px;" alt="Adrien CHRETIEN"/><br /><sub><b>Adrien CHRETIEN</b></sub></a><br /><a href="#translation-adrienchretien" title="Translation">🌍</a></td>
-    <td align="center"><a href="https://github.com/shnere"><img src="https://avatars1.githubusercontent.com/u/780497?v=4" width="120px;" alt="Alan Rodríguez"/><br /><sub><b>Alan Rodríguez</b></sub></a><br /><a href="#translation-shnere" title="Translation">🌍</a></td>
-    <td align="center"><a href="http://harisadam.com"><img src="https://avatars0.githubusercontent.com/u/797521?v=4" width="120px;" alt="Adam Haris"/><br /><sub><b>Adam Haris</b></sub></a><br /><a href="#translation-harisadam" title="Translation">🌍</a></td>
-    <td align="center"><a href="http://toshimaru.net/"><img src="https://avatars0.githubusercontent.com/u/803398?v=4" width="120px;" alt="Toshimaru"/><br /><sub><b>Toshimaru</b></sub></a><br /><a href="#translation-toshimaru" title="Translation">🌍</a></td>
-    <td align="center"><a href="http://shankarcabus.com.br"><img src="https://avatars3.githubusercontent.com/u/1202421?v=4" width="120px;" alt="Shankar Cabus"/><br /><sub><b>Shankar Cabus</b></sub></a><br /><a href="#translation-shankarcabus" title="Translation">🌍</a></td>
-    <td align="center"><a href="https://github.com/lukasz-jakub-adamczuk"><img src="https://avatars0.githubusercontent.com/u/1239848?v=4" width="120px;" alt="Ash"/><br /><sub><b>Ash</b></sub></a><br /><a href="#translation-lukasz-jakub-adamczuk" title="Translation">🌍</a></td>
-  </tr>
-  <tr>
-    <td align="center"><a href="https://github.com/hanksudo"><img src="https://avatars2.githubusercontent.com/u/467745?v=4" width="120px;" alt="Hank Wang"/><br /><sub><b>Hank Wang</b></sub></a><br /><a href="#translation-hanksudo" title="Translation">🌍</a></td>
-    <td align="center"><a href="https://graybobo.github.io/"><img src="https://avatars2.githubusercontent.com/u/790332?v=4" width="120px;" alt="KILLHAPPY."/><br /><sub><b>KILLHAPPY.</b></sub></a><br /><a href="https://github.com/h5bp/Front-end-Developer-Interview-Questions/commits?author=Graybobo" title="Documentation">📖</a></td>
-    <td align="center"><a href="http://msvaljek.blogspot.com"><img src="https://avatars0.githubusercontent.com/u/2877320?v=4" width="120px;" alt="Marko Švaljek"/><br /><sub><b>Marko Švaljek</b></sub></a><br /><a href="#translation-msval" title="Translation">🌍</a></td>
-    <td align="center"><a href="https://www.funcion13.com"><img src="https://avatars2.githubusercontent.com/u/946645?v=4" width="120px;" alt="Antonio Laguna"/><br /><sub><b>Antonio Laguna</b></sub></a><br /><a href="https://github.com/h5bp/Front-end-Developer-Interview-Questions/commits?author=Antonio-Laguna" title="Documentation">📖</a> <a href="#translation-Antonio-Laguna" title="Translation">🌍</a></td>
-    <td align="center"><a href="http://www.mi2oon.com"><img src="https://avatars3.githubusercontent.com/u/464143?v=4" width="120px;" alt="Mithun Dhiman"/><br /><sub><b>Mithun Dhiman</b></sub></a><br /><a href="#translation-mi2oon" title="Translation">🌍</a></td>
-    <td align="center"><a href="http://darklg.me"><img src="https://avatars1.githubusercontent.com/u/307957?v=4" width="120px;" alt="Kévin Rocher / @Darklg"/><br /><sub><b>Kévin Rocher / @Darklg</b></sub></a><br /><a href="#translation-Darklg" title="Translation">🌍</a></td>
-  </tr>
-  <tr>
-    <td align="center"><a href="http://dpashk.com"><img src="https://avatars3.githubusercontent.com/u/1157741?v=4" width="120px;" alt="Dmitry Pashkevich"/><br /><sub><b>Dmitry Pashkevich</b></sub></a><br /><a href="#translation-dpashkevich" title="Translation">🌍</a></td>
-    <td align="center"><a href="https://github.com/karmeljuk"><img src="https://avatars0.githubusercontent.com/u/5672886?v=4" width="120px;" alt="karmeljuk"/><br /><sub><b>karmeljuk</b></sub></a><br /><a href="#translation-karmeljuk" title="Translation">🌍</a></td>
-    <td align="center"><a href="https://decaf.de"><img src="https://avatars2.githubusercontent.com/u/1297466?v=4" width="120px;" alt="Dirk Schürjohann"/><br /><sub><b>Dirk Schürjohann</b></sub></a><br /><a href="#translation-schuer" title="Translation">🌍</a></td>
-    <td align="center"><a href="https://github.com/cybear"><img src="https://avatars1.githubusercontent.com/u/73858?v=4" width="120px;" alt="Björn Söderqvist"/><br /><sub><b>Björn Söderqvist</b></sub></a><br /><a href="#translation-cybear" title="Translation">🌍</a></td>
-    <td align="center"><a href="http://www.nitinh.com"><img src="https://avatars1.githubusercontent.com/u/50523?v=4" width="120px;" alt="Nitin Hayaran"/><br /><sub><b>Nitin Hayaran</b></sub></a><br /><a href="https://github.com/h5bp/Front-end-Developer-Interview-Questions/commits?author=nitinhayaran" title="Documentation">📖</a></td>
-    <td align="center"><a href="http://poetro.hu/"><img src="https://avatars0.githubusercontent.com/u/412052?v=4" width="120px;" alt="Peter Galiba"/><br /><sub><b>Peter Galiba</b></sub></a><br /><a href="https://github.com/h5bp/Front-end-Developer-Interview-Questions/commits?author=Poetro" title="Documentation">📖</a></td>
-  </tr>
-  <tr>
-    <td align="center"><a href="http://neilheinrich.com"><img src="https://avatars2.githubusercontent.com/u/23180?v=4" width="120px;" alt="Neil Heinrich"/><br /><sub><b>Neil Heinrich</b></sub></a><br /><a href="https://github.com/h5bp/Front-end-Developer-Interview-Questions/commits?author=nheinrich" title="Documentation">📖</a></td>
-    <td align="center"><a href="http://ohgyun.com"><img src="https://avatars2.githubusercontent.com/u/582314?v=4" width="120px;" alt="Ohgyun Ahn"/><br /><sub><b>Ohgyun Ahn</b></sub></a><br /><a href="#translation-ohgyun" title="Translation">🌍</a></td>
-    <td align="center"><a href="https://github.com/nerdog"><img src="https://avatars3.githubusercontent.com/u/1648813?v=4" width="120px;" alt="nerdog"/><br /><sub><b>nerdog</b></sub></a><br /><a href="#translation-nerdog" title="Translation">🌍</a></td>
-    <td align="center"><a href="http://leo.cr"><img src="https://avatars2.githubusercontent.com/u/117184?v=4" width="120px;" alt="Leo Picado"/><br /><sub><b>Leo Picado</b></sub></a><br /><a href="#translation-leopic" title="Translation">🌍</a></td>
-    <td align="center"><a href="http://refine.hull.io"><img src="https://avatars3.githubusercontent.com/u/9458?v=4" width="120px;" alt="Romain Dardour"/><br /><sub><b>Romain Dardour</b></sub></a><br /><a href="#translation-unity" title="Translation">🌍</a></td>
-    <td align="center"><a href="http://blog.alexanderseville.com/"><img src="https://avatars2.githubusercontent.com/u/1172331?v=4" width="120px;" alt="Alex Seville"/><br /><sub><b>Alex Seville</b></sub></a><br /><a href="https://github.com/h5bp/Front-end-Developer-Interview-Questions/commits?author=alex-seville" title="Documentation">📖</a></td>
-  </tr>
-  <tr>
-    <td align="center"><a href="http://hooray.cnblogs.com"><img src="https://avatars3.githubusercontent.com/u/1574903?v=4" width="120px;" alt="胡尐睿丶"/><br /><sub><b>胡尐睿丶</b></sub></a><br /><a href="#translation-hooray" title="Translation">🌍</a></td>
-    <td align="center"><a href="http://petrychuk.com"><img src="https://avatars3.githubusercontent.com/u/744568?v=4" width="120px;" alt="Vitalii Petrychuk"/><br /><sub><b>Vitalii Petrychuk</b></sub></a><br /><a href="#translation-vermilion1" title="Translation">🌍</a></td>
-    <td align="center"><a href="http://tairraos.github.io"><img src="https://avatars1.githubusercontent.com/u/185069?v=4" width="120px;" alt="Tairraos"/><br /><sub><b>Tairraos</b></sub></a><br /><a href="https://github.com/h5bp/Front-end-Developer-Interview-Questions/commits?author=Tairraos" title="Documentation">📖</a> <a href="#translation-Tairraos" title="Translation">🌍</a></td>
-    <td align="center"><a href="https://github.com/draev"><img src="https://avatars2.githubusercontent.com/u/842729?v=4" width="120px;" alt="Dmitrii Raev"/><br /><sub><b>Dmitrii Raev</b></sub></a><br /><a href="#translation-draev" title="Translation">🌍</a></td>
-    <td align="center"><a href="https://github.com/bpu"><img src="https://avatars1.githubusercontent.com/u/3254402?v=4" width="120px;" alt="Bartek"/><br /><sub><b>Bartek</b></sub></a><br /><a href="#translation-bpu" title="Translation">🌍</a></td>
-    <td align="center"><a href="https://twitter.com/vitorbal"><img src="https://avatars2.githubusercontent.com/u/626038?v=4" width="120px;" alt="Vitor Balocco"/><br /><sub><b>Vitor Balocco</b></sub></a><br /><a href="https://github.com/h5bp/Front-end-Developer-Interview-Questions/commits?author=vitorbal" title="Documentation">📖</a></td>
-  </tr>
-  <tr>
-    <td align="center"><a href="http://jonathantneal.com"><img src="https://avatars0.githubusercontent.com/u/188426?v=4" width="120px;" alt="Jonathan Neal"/><br /><sub><b>Jonathan Neal</b></sub></a><br /><a href="https://github.com/h5bp/Front-end-Developer-Interview-Questions/commits?author=jonathantneal" title="Documentation">📖</a></td>
-    <td align="center"><a href="https://github.com/Muqito"><img src="https://avatars3.githubusercontent.com/u/3002925?v=4" width="120px;" alt="Christoffer Lans"/><br /><sub><b>Christoffer Lans</b></sub></a><br /><a href="#translation-Muqito" title="Translation">🌍</a></td>
-    <td align="center"><a href="http://www.felipefialho.com/"><img src="https://avatars0.githubusercontent.com/u/3603793?v=4" width="120px;" alt="Felipe Fialho"/><br /><sub><b>Felipe Fialho</b></sub></a><br /><a href="#translation-LFeh" title="Translation">🌍</a></td>
-    <td align="center"><a href="http://piotrek.co"><img src="https://avatars3.githubusercontent.com/u/85532?v=4" width="120px;" alt="Piotrek Mierzejewski"/><br /><sub><b>Piotrek Mierzejewski</b></sub></a><br /><a href="#translation-pim" title="Translation">🌍</a></td>
-    <td align="center"><a href="http://patrikwibron.se/"><img src="https://avatars3.githubusercontent.com/u/233347?v=4" width="120px;" alt="Patrik Wibron"/><br /><sub><b>Patrik Wibron</b></sub></a><br /><a href="#translation-wibron" title="Translation">🌍</a></td>
-    <td align="center"><a href="http://vdv73.ru"><img src="https://avatars3.githubusercontent.com/u/971061?v=4" width="120px;" alt="Dmitry Vislov"/><br /><sub><b>Dmitry Vislov</b></sub></a><br /><a href="#translation-vdv73rus" title="Translation">🌍</a></td>
-  </tr>
-  <tr>
-    <td align="center"><a href="http://krzysztofromanowski.pl"><img src="https://avatars2.githubusercontent.com/u/522810?v=4" width="120px;" alt="Krzysztof Romanowski"/><br /><sub><b>Krzysztof Romanowski</b></sub></a><br /><a href="https://github.com/h5bp/Front-end-Developer-Interview-Questions/commits?author=castus" title="Documentation">📖</a></td>
-    <td align="center"><a href="http://www.very-geek.com"><img src="https://avatars3.githubusercontent.com/u/1104018?v=4" width="120px;" alt="Albert Yu"/><br /><sub><b>Albert Yu</b></sub></a><br /><a href="#translation-nightire" title="Translation">🌍</a></td>
-    <td align="center"><a href="https://twitter.com/slaramen"><img src="https://avatars3.githubusercontent.com/u/585824?v=4" width="120px;" alt="Sebastian Lara Menares"/><br /><sub><b>Sebastian Lara Menares</b></sub></a><br /><a href="#translation-slara" title="Translation">🌍</a></td>
-    <td align="center"><a href="http://sunnylost.com/"><img src="https://avatars3.githubusercontent.com/u/693496?v=4" width="120px;" alt="sunnylost"/><br /><sub><b>sunnylost</b></sub></a><br /><a href="#translation-sunnylost" title="Translation">🌍</a></td>
-    <td align="center"><a href="https://github.com/miniflycn"><img src="https://avatars3.githubusercontent.com/u/2239584?v=4" width="120px;" alt="Daniel Yang"/><br /><sub><b>Daniel Yang</b></sub></a><br /><a href="https://github.com/h5bp/Front-end-Developer-Interview-Questions/commits?author=miniflycn" title="Documentation">📖</a></td>
-    <td align="center"><a href="http://contains.me/"><img src="https://avatars0.githubusercontent.com/u/1562646?v=4" width="120px;" alt="Michael P. Pfeiffer"/><br /><sub><b>Michael P. Pfeiffer</b></sub></a><br /><a href="#translation-frontdevde" title="Translation">🌍</a></td>
-  </tr>
-  <tr>
-    <td align="center"><a href="http://craft-interactive.de/"><img src="https://avatars1.githubusercontent.com/u/1557092?v=4" width="120px;" alt="Tyll Weiß"/><br /><sub><b>Tyll Weiß</b></sub></a><br /><a href="#translation-Inkdpixels" title="Translation">🌍</a></td>
-    <td align="center"><a href="http://andreime.com"><img src="https://avatars2.githubusercontent.com/u/636000?v=4" width="120px;" alt="Andrei Sebastian Cîmpean"/><br /><sub><b>Andrei Sebastian Cîmpean</b></sub></a><br /><a href="#translation-andreisebastianc" title="Translation">🌍</a></td>
-    <td align="center"><a href="http://sokolov.cc/"><img src="https://avatars0.githubusercontent.com/u/113721?v=4" width="120px;" alt="Denis Sokolov"/><br /><sub><b>Denis Sokolov</b></sub></a><br /><a href="https://github.com/h5bp/Front-end-Developer-Interview-Questions/commits?author=denis-sokolov" title="Documentation">📖</a></td>
-    <td align="center"><a href="https://github.com/arcanous"><img src="https://avatars3.githubusercontent.com/u/4963067?v=4" width="120px;" alt="Harijs Deksnis"/><br /><sub><b>Harijs Deksnis</b></sub></a><br /><a href="#translation-arcanous" title="Translation">🌍</a></td>
-    <td align="center"><a href="http://htmlcssjavascript.com/"><img src="https://avatars0.githubusercontent.com/u/361421?v=4" width="120px;" alt="Rob Larsen"/><br /><sub><b>Rob Larsen</b></sub></a><br /><a href="#ideas-roblarsen" title="Ideas, Planning, & Feedback">🤔</a> <a href="#review-roblarsen" title="Reviewed Pull Requests">👀</a> <a href="#maintenance-roblarsen" title="Maintenance">🚧</a></td>
-    <td align="center"><a href="https://cezaraugusto.net/"><img src="https://avatars0.githubusercontent.com/u/4672033?v=4" width="120px;" alt="Cezar Augusto"/><br /><sub><b>Cezar Augusto</b></sub></a><br /><a href="#ideas-cezaraugusto" title="Ideas, Planning, & Feedback">🤔</a> <a href="#infra-cezaraugusto" title="Infrastructure (Hosting, Build-Tools, etc)">🚇</a> <a href="#review-cezaraugusto" title="Reviewed Pull Requests">👀</a> <a href="#maintenance-cezaraugusto" title="Maintenance">🚧</a></td>
-  </tr>
-  <tr>
-    <td align="center"><a href="https://www.linkedin.com/in/vvanchuk/"><img src="https://avatars1.githubusercontent.com/u/6904368?v=4" width="120px;" alt="Vasiliy Vanchuk"/><br /><sub><b>Vasiliy Vanchuk</b></sub></a><br /><a href="#ideas-vvscode" title="Ideas, Planning, & Feedback">🤔</a> <a href="#review-vvscode" title="Reviewed Pull Requests">👀</a> <a href="#maintenance-vvscode" title="Maintenance">🚧</a></td>
-  </tr>
-</table>
+#### [[⬆]](#toc) <a name='html'>Вопросы по HTML:</a>
 
-<!-- markdownlint-enable -->
-<!-- prettier-ignore-end -->
-<!-- ALL-CONTRIBUTORS-LIST:END -->
+* Для чего нужен `doctype`?
+Doctype обьявляет тип документа, обьясняя браузеру в какой версии HTML он сверстан.
+* Как следует оформлять страницу, содержимое которой может быть на разных языках?
+(Расплывчатый вопрос) При HTTP запросе серверу, браузер отсылает информацию о предпочитаемом языке, в возвращенном HTML документе обязательно у тега "html" должен содержаться атрибут lang, динамическое формирование языка страницы обычно организуется backendом
+* На что необходимо обратить внимание при разработке мультиязычных сайтов?
+1. Атрибут lang
+2. Беспробленая смена языка на странице и перенаправление пользователя на подходящую ему вресию
+3. Минимизировать текст на картинках(Так как для каждой версии страницы нужна будет отдельная картинка с переведнным текстом)
+4. Учитывать разницу в длине предложений на разных языках, что бы макет выглядел одинаково всегда
+5. Не склеивать строки, так как в разных языках разная грамматика соотвественно. ("Я пойду гулять "+date) расположение date зависит от граммтаики конкретного языка.
+6. Учитывать направления чтения
+* Для чего нужны атрибуты, начинающиеся с `data-`?
+После популиризации JS фреймворков, разработчики начали использовать дата-атрибуты, чтобы хранить данные в DOM без помощи нестандартных атрибутов и доп.свойств DOM. Дата-атрибуты предназначены для гранения частных данных пользователя, если нет более подходящих атрибуотов или элементов на странице.
+Я считаю, что не стоит использовать дата-атрибуты повсеместно, так как польхователь может модифицировать данные через DevTools. Лучше хранить данные непосредственно в JS и обновлять DOM через библиотеку\фреймворк
+* Представьте HTML5 как открытую веб-платформу. Из каких блоков состоит HTML5?
+1. Семантика (Точно описание из чего состоит контент)
+2. Связанность (Общение с сервером)
+3. Хранилище (Страницы хранят данные локально на клиентской стороне и эффективнее работают в офлайне)
+4. Мультимедиа
+5. Графика и эффекты
+6. Производительность
+7. Взаимодействие с различными устройствами ввода\вывода
+8. Стилизация
+* Объясните разницу между `cookie`, `sessionStorage` и `localStorage`.
+Все выше указанные технологии хранят  тип ключ-значение на клиентской стороне.
+1. В случае куки инициатором может являтся как клиент, так и сервер(В двух других инициатор - клиент)
+2. Срок хранения данных у куки устанавливается вручную, локалсторедж хранит данные всегда, а сешонсторедж - до закрытия вкладки
+3. Соответственно хранение данных между сессиями у куки зависит от установленного срока хранения, у локалсторедж оно присутствует и отсутствует у сешон сторедж
+4. Отправка данных на серверс с HTTP запросом присутствует только у куки
+5. Емкость у куки меньше, чем у остальных (4кб и 5мб)
+6. Данные у куки и локал сторедж доступны в любом окне, у сешон только в той же вкладке
+* Объясните разницу между `<script>`, `<script async>` и `<script defer>`.
+1. Script блокирует отрисовку html, выполняется немедленно
+2. Script async обрабатывается параллельно с отрисовкой документа. Использовать async лучше тогда, когда он не зависит от других скриптов на странице
+3. Script defer - отложенный скрипт, выполняется после отрисовки документа.
+Атрибуты игнориуются если нет тега src
+* Почему хорошей практикой считается располагать `<link>` для подключения CSS между `<head></head>`, а `<script>` для подключения JS ставить перед `</body>`? Знаете ли вы исключения?
+Расположение link внутри head необходимо для оптимизации сайта. Когда страница загружается впервые, HTML создает DOM, а CSS CSSOM, и то и то создает визуал на сайте, позволяя быстро определить время первой отрисовки страницы, если разметсить стиили в нижней части документа, то это будет препятствовать производительности. Некоторые браузеры заблокирует рендеринг, во избежания перерисовки элементов на странице, если стиили изменяется. а пользователь будет смотреть в белый экран.
+* Что такое прогрессивная отрисовка?
+Прогрессивная отрисовка(рендеринг) - технологии, позволяющие ускорить отрисовку страницы. Примеры: 
+1. Ленивая загрузка изображений. Изображения подгружаются тогда, когда пользователь долистает до них
+2. Приоритизация видимого контента, минимум контента и сркиптов для той части страницы, которую пользователь увидит первой.
+3. Асинхронные фрагменты HTML, части HTML страницы отправятся в браузер, создавшись на бекенде
+* Для чего используется атрибут `srcset` в теге изображения? Опишите процесс, который использует браузер при оценке содержимого этого атрибута.
+srcset Необходим дял показа и загрузки разных изображений, в зависимости от размеров и разрешения экрана пользователя(таким образом исчезает надобность загружать слишком большие изоюражения для пользователям на мобилках)
+* Приходилось ли вам работать с языками HTML-шаблонизации?
+Да, я изучала PUG(JADE).
 
-## License
+#### [[⬆]](#toc) <a name='css'>Вопросы по CSS:</a>
 
-[Copyright (c) Contributors of the Front-end Developer Interview Questions](https://github.com/h5bp/Front-end-Developer-Interview-Questions/blob/master/LICENSE.md)
+* Что такое специфичность CSS-селекторов и как она работает?
+Браузер определяет какие стили отображаются, в зависимости от специфики правил CSS. Стили определяются через
+1. Инлайновые стили(html)
+2. Селекторы по ID
+3. Классы, атрибуты и псевдоклассы
+4. Тeги и псевдоэлементы
+Инлайновые стили имеют наивысший приоритет и не могут быть переопредленны другими способами, селекторы по тегам и псевдоэжлементам имеют наименьший приоритет.
+* В чем разница между «сбросом» и «нормализацией» CSS? Что бы вы выбрали и почему?
+Сброс удаляет все стили браузера, которые имеются по умолчанию
+Нормализжация сохраняет "полезные" стили, которые есть по умолячанию, а так же исправляет стандартизирует вид в кажом браузере.
+Я предпочитаю сброс, что бы не думать об уже установленных стилях
+* Объясните, что такое плавающие элементы (floats) и как они работают.
+Float - свойство позиционирования, элемент остается в потоке страницы и будет влияеть на позиционирование друшиъ элементов, в отличии от position: absolute.
+* Объясните, что такое z-index и как формируется контекст наложения.
+z-index это свойство управленияи порядком наложения элементов, имеющих position отличный от static, чем больше z-index, тем приоритетнее у элемента расположение "выше" чем у остальных. Если z-index у элементов отсутствуют, то наложение будет происходит в порядке, в котором они расположены в DOM
+* Объясните, что такое блочный контекст форматирования и как он работает.
+Это часть механизма отображения веб-страницы в CSS. Это та в облость, в которой происходит расположение блочных элементов, и в котором плавающие элементы взаимодействуют с другими эл-ми.
+* Какие вы знаете методы запрета обтекания (clearing) и в каких случаях они применяются?
+Clear устанавливает, с какой стороны элемента запрещено его обтекание другими элементами. Если задано обтекание элемента с помощью свойства float, то clear отменяет его действие для указанных сторон.
+* Как вы решаете стилевые проблемы, связанные с особенностями браузеров?
+Использование Normalixe\Reset\Autoprefixer
+* Как вы обеспечиваете отображение страниц в браузерах с ограниченными возможностями?
+  * Какие приёмы/процессы вы при этом используете?
+Autoprefixer или Прогрессивное улучшение/Изящная деградация
+* Какими способами можно визуально скрыть элемент (оставив его доступным только для скринридера)?
+Свойство visibility: visible. На моем опыте я добавляла элементам класс visually-hidden, который будет скрывать элемент, не используя display: none.(например с помощью )
+* Использовали ли вы систему сеток, и если да, то какую вы предпочитаете?
+
+* Приходилось ли вам использовать или реализовывать медиазапросы или вёрстку под мобильные устройства?
+Да, я активно занималась адаптивной версткой.
+* Вы знакомы со стилизацией SVG?
+Да, SVG основан на XML, стилевые свойства отличаютсяпо названию. SVG можно стилизовать непосрежственно в SVG-разметке или в CSS файлах
+* Можете ли вы привести пример свойства `@media`, отличного от `screen`?
+1. all - все устройства
+2. print - для принтеров
+3. speech - для синтезаторов речи
+* На что нужно обратить внимание при написании эффективного CSS?
+Для эффективного CSS нужна четкая система, мне нравится методология БЭМ, в которой все элементы имеют одинаковую спецефичность. а код можно переиспользовать
+* Какие преимущества/недостатки в использовании CSS препроцессоров?
+  * Опишите, что вам нравится и не нравится в CSS препроцессорах, которыми вы пользовались.
+Плюсы:
+1. Вложенность
+2. Переменные
+3. Миксины
+Минусы:
+Не сталкивалась
+* Как вы реализуете макет, который использует нестандартные шрифты?
+Необходимо создать CSS файла для шрифтов, каждый шрифт можно подключать с помощью @font-face
+* Объясните, как браузер определяет, на какие элементы накладывать CSS стили?
+Браузер сравнивает селекторы справа налево, браузер найдет все элементы DOM, соотвествующие ключевому(самому правому) селектору, дальше проходит до родителя и ищет соответвия. Чем короче цепь сеелекторов, тем быстрее браузер найдет элемент
+* Объясните, что такое псевдоэлементы и для чего они нужны.
+Псевдоэлементы - это ключевое слово, которое добавляется к селектору для его стилизации. Они  могут  добавлятся для украшения или для добавляния элементов к разметке, без изменения css
+* Объясните своими словами, что такое блочная модель.
+Блочная модель(border-box) - правило, по которому браузер определяет ширину и высоту элемента(По умолячанию content-box, padding border включены в размерности)
+* Что делает ```* { box-sizing: border-box; }```? В чем его преимущества?
+При Border-box в рамерности не включеныт padding и border, что может быть удобным, для определения непосредственного размера элемента
+* Что означает свойство `display` и можете ли вы привести несколько примеров его использования?
+Display определяет, как должен быть показан элемент в документе.
+None, block, inline, inline-block, table, flex, grid
+* В чем разница между строчным и блочно-строчным элементом?
+Блочно-строчным элементам можно задать ширину и высоту, а так работает vertical-align(строчные можно выравнивать только по горизонтале), margin, padding. Если строчному элементу задать вертикальные margin padding он начнет вести себя, как блочный
+* В чем разница между относительным, фиксированным, абсолютным и статически позиционированным элементом?
+1. static - значение по умолчанию. Свойства top, right, bottom, left и z-index не применяются
+2. relative - элемент вырванивается отностельно себя без изменения разметки
+3. absolute - элемент вылетает из потока и выстраивается относительно ближайшего предка с относительным позиционированием
+4. fixed - выдергивается из потока и фиксируется относительно окна документа, не меняя положения при скроле
+* Какими CSS-фреймворками вы пользовались? Что бы вы хотели в них изменить/улучшить?
+Не пользовалась
+* Пользовались ли вы Flexbox или Grid?
+Да, я постоянно использую их на практике и считаю особенно удобными, что бы блоки сайта был способен на переполнение контентом
+* Можете ли вы объяснить разницу между отзывчивым (responsive) сайтом и сайтом, сделанным по принципу mobile-first?
+Отзывчивая верстка или по другому desktop-first начинается с верстки для десктопной версии сайта, и только после адаптируется под меньшие экраны. В mobile-first все наоборот
+* Вы имеете опыт работы с ретиновой графикой? Если да, то какие методы вы использовали?
+Подключала графику для ретиновыъ экранов с помощью медиа выражений
+* В каком случае вы предпочтёте использовать `translate()` вместо абсолютного позиционирования и наоборот? И почему? 
+
+#### [[⬆]](#toc) <a name='js'>Вопросы по JavaScript:</a>
+
+* Объясните делегирование событий.
+* Объясните, как `this` работает в JavaScript.
+* Расскажите, как работает прототипное наследование.
+* Что вы думаете о AMD против CommonJS?
+* Объясните, почему это не является IIFE: `function foo(){ }();`.
+  * Что необходимо изменить, чтобы это стало IIFE?
+* В чём различие между переменными, значение которых: `null`, `undefined` и не объявлено?
+  * Как бы вы проверили их на каждое из этих значений?
+* Что такое замыкание и как/для чего его используют?
+* Можете ли вы описать основное различие между циклом `forEach` и циклом `.map()`? И в каких случаях каждый из них используется?
+* В каких случаях обычно используются анонимные функции?
+* Как вы организуете свой код? (module pattern, classical inheritance)
+* В чем разница между host-объектами и нативными объектами?
+* В чем разница между: `function Person(){}`, `var person = Person()`, и `var person = new Person()`?
+* В чем разница между `.call` и `.apply`?
+* Что делает и для чего нужна функция `Function.prototype.bind`?
+* В чем разница между feature detection (определение возможностей браузера), feature inference (предположение возможностей) и анализом строки user-agent?
+* Расскажите об Ajax как можно более подробно.
+* Какие преимущества и недостатки в использовании Ajax?
+* Объясните, как работает JSONP (и почему это не совсем AJAX).
+* Вы когда-нибудь использовали шаблонизацию на JavaScript?
+  * Если да, то какие библиотеки вы использовали?
+* Расскажите, что такое поднятие (hoisting).
+* Объясните, что такое всплытие событий (event bubbling).
+* В чём разница между «атрибутом» (attribute) и «свойством« (property)?
+* Почему не следует расширять нативные JavaScript-объекты?
+* В чём разница между событием document load и событием document DOMContentLoaded?
+* В чём разница между `==` и `===`?
+* Объясните `same-origin policy` в контексте JavaScript.
+* Сделайте так, чтобы этот код работал:
+```javascript
+duplicate([1,2,3,4,5]); // [1,2,3,4,5,1,2,3,4,5]
+```
+* Почему тернарный оператор так называется?
+* Что делает строчка `"use strict";`? Какие достоинства и недостатки от ее использования?
+* Напишите цикл, который перебирает числа до `100`, возвращая **"fizz"** на числа кратные `3`, **"buzz"** на числа кратные `5` и **"fizzbuzz"** на числа кратные `3` и `5`
+* Почему считается хорошим тоном оставить глобальную область видимости (global scope) в нетронутом состоянии?
+* Для чего используют событие `load`? Есть ли у этого события недостатки? Знаете ли вы какие-либо альтернативы, и в каких случаях бы стали их использовать?
+* Расскажите, что такое одностраничное приложение, и как сделать его SEO-оптимизированным.
+* Насколько вы опытны в работе с промисами (promises) и/или их полифилами?
+* Какие преимущества и недостатки при использовании промисов вместо колбэков (callbacks)?
+* Каковы преимущества и недостатки написания JavaScript-кода на языке, который компилируется в JavaScript?
+* Какие инструменты и методы вы используете при отладке кода?
+* Какие языковые конструкции вы используете для итерации по свойствам объекта и элементам массива?
+* Объясните разницу между изменяемыми (mutable) и неизменяемыми (immutable) объектами.
+  * Приведите пример неизменяемого объекта в JavaScript.
+  * Какие преимущества и недостатки у неизменяемости?
+  * Как вы можете достигнуть неизменяемости в вашем коде?
+* Объясните разницу между синхронными и асинхронными функциями.
+* Что такое цикл событий (event loop)?
+  * В чём разница между стеком вызовов (call stack) и очередью событий (task queue)?
+* Объясните разницу при использовании `foo` в `function foo() {}` и `var foo = function() {}`
+* В чём различие между переменными, созданными при помощи `let`, `var` и `const`?
+* В чём разница между классом в ES6 и функцией-конструктором в ES5?
+* Можете ли вы привести пример использования стрелочных функции `=>`? Чем они отличаются от других функций?
+* Дайте определение функции высшего порядка.
+* Можете ли вы привести пример деструктуризации объекта или массива?
+* Шаблонные строки в ES6 намного упрощают создание строк, можете ли вы привести пример их использования?
+* Можете ли вы привести пример каррированной функции (curry function) и в чём их преимущество?
+* В чём преимущества использования `spread` оператора и чем он отличается от `rest` оператора?
+* Каким образом можно обмениваться кодом между файлами?
+* Для чего используются статические члены класса?
+
+#### [[⬆]](#toc) <a name='testing'>Вопросы по тестированию:</a>
+
+* Какие преимущества/недостатки в тестировании собственного кода?
+* Какие инструменты вы будете использовать для тестирования работоспособности своего кода?
+* В чём различие между юнит-тестами и функциональными/интеграционными тестами?
+* Для чего предназначены линтеры (code style linting tool)?
+
+#### [[⬆]](#toc) <a name='performance'>Вопросы по производительности:</a>
+
+* Какие инструменты вы используете, чтобы найти недостатки в производительности вашего кода?
+* Какие вы знаете способы улучшения производительности при скроллинге на вебсайте?
+* Объясните разницу между раскладкой (layout), painting и композитингом (compositing).
+
+#### [[⬆]](#toc) <a name='network'>Вопросы по сетям:</a>
+
+* Почему лучше загружать ресурсы для сайта с нескольких доменов?
+* Опишите весь процесс, начиная с ввода адреса сайта в адресную строку до окончания его загрузки на экране.
+* В чём различия между Long-Polling, Websockets и Server-Sent Events?
+* Опишите следующие заголовки HTTP-запросов и ответов:
+  * Разницу между Expires, Date, Age и If-Modified-...
+  * Do Not Track
+  * Cache-Control
+  * Transfer-Encoding
+  * ETag
+  * X-Frame-Options
+* Что такое HTTP-методы? Перечислите все HTTP-методы, которые вы знаете, и объясните их.
+
+#### [[⬆]](#toc) <a name='jscode'>Примеры кода на JavaScript</a>
+
+*Вопрос: Чему равно `foo`?*
+```javascript
+var foo = 10 + '20';
+```
+
+*Вопрос: Что выводит код ниже?*
+```javascript
+console.log(0.1 + 0.2 == 0.3);
+```
+
+*Вопрос: Как сделать, чтобы это выражение работало?*
+```javascript
+add(2, 5); // 7
+add(2)(5); // 7
+```
+
+*Вопрос: Какое значение возвращает данное выражение?*
+```javascript
+"i'm a lasagna hog".split("").reverse().join("");
+```
+
+*Вопрос: Чему равно `window.foo`?*
+```javascript
+( window.foo || ( window.foo = "bar" ) );
+```
+
+*Вопрос: Что покажут эти два alert?*
+```javascript
+var foo = "Hello";
+(function() {
+  var bar = " World";
+  alert(foo + bar);
+})();
+alert(foo + bar);
+```
+
+*Вопрос: Чему равно `foo.length`?*
+```javascript
+var foo = [];
+foo.push(1);
+foo.push(2);
+```
+
+*Вопрос: Чему равно `foo.x`?*
+```javascript
+var foo = {n: 1};
+var bar = foo;
+foo.x = foo = {n: 2};
+```
+
+*Вопрос: Что выводит код ниже?*
+```javascript
+console.log('one');
+setTimeout(function() {
+  console.log('two');
+}, 0);
+console.log('three');
+```
+
+*Вопрос: В чем разница между этими четырьмя промисами (promises)?*
+```javascript
+doSomething().then(function () {
+  return doSomethingElse();
+});
+
+doSomething().then(function () {
+  doSomethingElse();
+});
+
+doSomething().then(doSomethingElse());
+
+doSomething().then(doSomethingElse);
+```
+
+#### [[⬆]](#toc) <a name='fun'>«Светская беседа»:</a>
+
+* Самое крутое, что вы когда-либо делали и чем гордитесь?
+* Что вы больше всего любите в ваших инструментах разработки?
+* Кто из фронтенд-сообщества вас вдохновляет?
+* У вас есть какие-нибудь личные проекты? Какого рода?
+* Какая ваша любимая "фишка" Internet Explorer?
+* Какой кофе вы предпочитаете?
