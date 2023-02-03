@@ -8,11 +8,11 @@
 
   1. [Вопросы по HTML](/HTML/README.md)
   1. [Вопросы по CSS](/CSS/README.md)
-  1. [Вопросы по JavaScript](#js)
+  1. [Вопросы по JavaScript](/JS/README.md)
+  1. [Примеры кода на JavaScript](/JS-CODE/README.md)
   <!-- 1. [Вопросы по тестированию](#testing)
   1. [Вопросы по производительности](#performance)
   1. [Вопросы по сетям](#network) -->
-  1. [Примеры кода на JavaScript](/JS-CODE/README.md)
 
 <!-- #### [[⬆]](#toc) <a name='contributors'>Авторы</a>
 
